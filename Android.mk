@@ -1,0 +1,10 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_FORCE_STATIC_EXECUTABLE := true
+LOCAL_STATIC_LIBRARIES = libc
+LOCAL_MODULE := crash
+LOCAL_SRC_FILES := crash.c
+
+include $(BUILD_EXECUTABLE)
